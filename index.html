@@ -4,41 +4,48 @@
         <meta charset="utf-8" />
         <title>Xander Rapstine | About Me</title>
         <meta name="description" content="Xander Rapstine's portfolio">
-        <meta name="keywords" content="Xander Rapstine, web designer, web, website design, web design, web development, frontend development, Austin, Texas, Austin, TX">/>
+        <meta name="keywords" content="Xander Rapstine, web designer, web, website design, web design, web development, frontend development, Austin, Texas, Austin, TX">
         <link href="assets/css/reset.css" rel="stylesheet" type="text/css" media="screen">
         <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="screen">
     </head>
     <body>
         <div class="wrapper">
             <header>
-                <h1>Xander Rapstine</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="header-inner">
+                    <h1>Xander Rapstine</h1>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="index.html">About</a> | </li>
+                            <li><a href="portfolio.html">Portfolio</a> | </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
-            <main>
-                <h2>About Me</h2>
-                <hr>
-                <img src="assets/images/xander.png" alt="Xander Rapstine" />
-                <p></p>
-            </main>
-            <sidebar>
-                <h3>Connect with Me</h3>
-                <hr>
-                <ul>
-                    <li><a href="https://github.com/Xandromus" target="_blank"><img src="assets/images/github.png" alt="GitHub logo"></a></li>
-                    <li><a href="https://www.linkedin.com/in/alexander-rapstine-02164912/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn logo"></a></li>
-                    <li><a href="https://stackoverflow.com/users/9170875/xander-rapstine" target="_blank"><img src="assets/images/stackoverflow.png" alt="Stack Overflow logo"></a></li>
-                </ul>
-            </sidebar>
+            <div class="middle">
+                <main>
+                    <h2>About Me</h2>
+                    <hr>
+                    <img id="splash" src="assets/images/xander.png" alt="Xander Rapstine" />
+                    <p>I'm a web designer living in Austin, Texas. I have a passion for music, <a href="https://www.coffeekind.com/reading-room/the-three-waves-of-coffee/" target="_blank">third wave coffee</a>, and <a href="http://www.akc.org/dog-breeds/cardigan-welsh-corgi/" target="_blank">Cardigan Welsh Corgis</a>. In addition to general frontend development, I specialize in UI and responsive design. I'm particularly interested in working with musicians and other creative individuals to bring their passions to life.</p>
+                    <br />
+                    <p>I hold a <a href="http://continue.austincc.edu/webmaster" target="_blank">Web Developer Certificate</a> from <a href="http://www.austincc.edu/" target="_blank">Austin Community College</a>, and I have my Master's and Bachelor's Degrees in German Studies from <a href="https://msu.edu/" target="_blank">Michigan State University</a> and <a href="https://www.utexas.edu/" target="_blank">The University of Texas at Austin</a>, respectively.  I have several years experience with html5, css3, and JavaScript, and I customized and designed a <a href="https://www.zendesk.com/" target="_blank">Zendesk</a> help site at my current job. More recently, I've been working with JQuery, PHP, and WordPress.</p>
+                </main>
+                <aside>
+                    <h3>Connect with Me</h3>
+                    <hr>
+                    <nav class="social-nav">
+                        <ul>
+                            <li><a href="https://github.com/Xandromus" target="_blank"><img src="assets/images/github.png" alt="GitHub logo"></a></li>
+                            <li><a href="https://www.linkedin.com/in/alexander-rapstine-02164912/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn logo"></a></li>
+                           <li><a href="https://stackoverflow.com/users/9170875/xander-rapstine" target="_blank"><img src="assets/images/stackoverflow.png" alt="Stack Overflow logo"></a></li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
             <footer>
-                <hr>
                 <p>&copy;<script>
-                    document.write(new Date().getFullYear());</script> XANDER RAPSTINE</p>
+                    document.write(new Date().getFullYear());</script> Xander Rapstine</p>
             </footer>
         </div>
     </body>

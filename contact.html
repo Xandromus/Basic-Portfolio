@@ -11,41 +11,46 @@
     <body>
         <div class="wrapper">
             <header>
-                <h1>Xander Rapstine</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="header-inner">
+                    <h1>Xander Rapstine</h1>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="index.html">About</a> | </li>
+                            <li><a href="portfolio.html">Portfolio</a> | </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
-            <main>
-                <h2>Contact</h2>
-                <hr>
-                <form name="myform" action="confirmation.php" method="post">
-                    <input type="hidden" name="check_submit" value="1" />
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="John Smith" value="" size="30" />
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email" placeholder="example@gmail.com" value="" size="30" />
-                    <textarea name="messagebox" id="messagebox" rows="10" cols="30" placeholder="" wrap="soft"></textarea>
-                    <input type="submit" name="submit" value="Submit">
+            <div class="middle">
+                <main>
+                    <h2>Contact</h2>
+                    <hr>
+                    <form name="myform" action="confirmation.php" method="post">
+                        <input type="hidden" name="check_submit" value="1" />
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Smith" value="" size="30" />
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="example@gmail.com" value="" size="30" />
+                        <textarea name="messagebox" id="messagebox" rows="10" cols="30" placeholder="" wrap="soft"></textarea>
+                        <input type="submit" name="submit" value="Submit">
                 </form>
-            </main>
-            <sidebar>
-                <h3>Connect with Me</h3>
-                <hr>
-                <ul>
-                    <li><a href="https://github.com/Xandromus" target="_blank"><img src="assets/images/github.png" alt="GitHub logo"></a></li>
-                    <li><a href="https://www.linkedin.com/in/alexander-rapstine-02164912/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn logo"></a></li>
-                    <li><a href="https://stackoverflow.com/users/9170875/xander-rapstine" target="_blank"><img src="assets/images/stackoverflow.png" alt="Stack Overflow logo"></a></li>
-                </ul>
-            </sidebar>
+                </main>
+                <aside>
+                    <h3>Connect with Me</h3>
+                    <hr>
+                    <nav class="social-nav">
+                        <ul>
+                            <li><a href="https://github.com/Xandromus" target="_blank"><img src="assets/images/github.png" alt="GitHub logo"></a></li>
+                            <li><a href="https://www.linkedin.com/in/alexander-rapstine-02164912/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn logo"></a></li>
+                           <li><a href="https://stackoverflow.com/users/9170875/xander-rapstine" target="_blank"><img src="assets/images/stackoverflow.png" alt="Stack Overflow logo"></a></li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
             <footer>
-                <hr>
                 <p>&copy;<script>
-                    document.write(new Date().getFullYear());</script> XANDER RAPSTINE</p>
+                    document.write(new Date().getFullYear());</script> Xander Rapstine</p>
             </footer>
         </div>
     </body>
