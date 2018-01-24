@@ -26,14 +26,15 @@
                 <main>
                     <h2>Contact</h2>
                     <hr>
-                    <form name="myform" action="confirmation.php" method="post">
+                    <form name="myform" action="mailto:xanderrapstine@gmail.com" method="post">
                         <input type="hidden" name="check_submit" value="1" />
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="John Smith" value="" size="30" />
+                        <input type="text" name="name" id="name" placeholder="John Smith" value="" />
                         <label for="email">Email</label>
-                        <input type="text" name="email" id="email" placeholder="example@gmail.com" value="" size="30" />
+                        <input type="text" name="email" id="email" placeholder="example@gmail.com" value="" />
+                        <label for="messagebox">Message</label>
                         <textarea name="messagebox" id="messagebox" rows="10" cols="30" placeholder="" wrap="soft"></textarea>
-                        <input type="submit" name="submit" value="Submit">
+                        <input class="submit" type="submit" name="submit" value="Submit">
                 </form>
                 </main>
                 <aside>
@@ -49,7 +50,7 @@
                 </aside>
             </div>
             <footer>
-                <p>&copy;<script>
+                <p>&copy; <script>
                     document.write(new Date().getFullYear());</script> Xander Rapstine</p>
             </footer>
         </div>
