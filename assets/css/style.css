@@ -34,17 +34,18 @@ h1 {
 
 h2, h3 {
 	color: #4aaaa5;
-	margin: 20px 30px;
 	font-weight: bold;
 }
 
 h2 {
 	font-size: 1.5em;
+    margin: 40px 30px 20px 30px;
 }
 
 h3 {
 	text-align: center;
 	font-size: 1.3em;
+    margin: 20px 30px;
 }
 
 p {
@@ -54,7 +55,9 @@ p {
 }
 
 hr {
-	color: #777777;
+	background-color: #dddddd;
+    border: none;
+    height: 3px;
 	margin: 20px 30px;
 }
 
@@ -125,6 +128,7 @@ header {
 }
 
 .main-nav a {
+    border: none;
 	display: inline-block;
     margin: 25px 15px;
 	text-decoration: none;
@@ -135,7 +139,11 @@ header {
 }
 
 .main-nav a:hover {
-    text-decoration: underline;
+    margin: 5px 15px;
+    font-style: italic;
+    border-top: #4aaaa5 solid 10px;
+    border-bottom: #4aaaa5 solid 10px;
+    transition: all .2s;
 }
 
 /* MIDDLE SECTION */
@@ -157,6 +165,7 @@ main {
 	background-color: #ffffff;
 	margin: 30px 0 50px 0;
 	overflow: hidden;
+    border: #dddddd solid 1px;
 }
 
 img.left {
@@ -167,7 +176,7 @@ img.left {
 
 img.right {
 	float: right;
-	max-width: 300px;
+	max-height: 300px;
 	margin: 10px 30px 10px 20px;
 }
 
@@ -176,11 +185,11 @@ aside {
 	top: 0;
 	right: 0;
 	width: 270px;
-	float: right;
 	margin: 0 0 30px 0;
 	padding-bottom: 30px;
 	background-color: #ffffff;
 	overflow: hidden;
+    border: #dddddd solid 1px;
 }
 
 /* SOCIAL NAV */
@@ -284,14 +293,20 @@ form {
 
 input, textarea {
     display: block;
-    margin: 5px 0 20px 0;
+    margin: 8px 0 20px 0;
     width: 100%;
     max-width: 100%;
     padding: 10px;
+    color: #777777;
+    border: #dddddd solid 1px;
 }
 
 label {
-    font-weight: bold;
+    font-weight: normal;
+}
+
+::placeholder {
+    color: #b7b7ba;
 }
 
 .submit {
@@ -307,9 +322,18 @@ label {
 .submit:hover {
     background-color: #ffffff;
     color: #4aaaa5;
+    box-shadow: 2px 2px #4aaaa5;
     padding: 8px 23px;
     border: #4aaaa5 solid 2px;
     cursor: pointer;
+}
+
+.submit:active {
+    padding: 10px 25px;
+    background-color: #4aaaa5;
+    box-shadow: none;
+    color: #ffffff;
+    border: none;
 }
 
 /* FOOTER */
