@@ -170,14 +170,20 @@ main {
 
 img.left {
 	float: left;
-	max-width: 300px;
 	margin: 10px 20px 10px 30px;
 }
 
 img.right {
 	float: right;
-	max-height: 300px;
 	margin: 10px 30px 10px 20px;
+}
+
+img.landscape {
+    max-width: 300px;
+}
+
+img.portrait {
+    max-height: 300px;
 }
 
 aside {
@@ -280,9 +286,58 @@ aside {
     transition: all .3s;
 }
 
+.portfolio-title a:hover::before {
+    content: "";
+    height: 10px;
+    width: 100%;
+    background-color: #4aaaa5;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 0;
+    transition: all ease-in-out .3s;
+}
+
+.portfolio-title a:hover::after {
+    content: "";
+    height: 10px;
+    width: 100%;
+    background-color: #4aaaa5;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    left: 0;
+    transition: all ease-in-out .3s;
+}
+
 .portfolio-module img {
     width: 275px;
     height: 183px;
+}
+
+.one {
+    animation: fadeIn 1.25s ease-in-out 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.two {
+    animation: fadeIn 1.25s ease-in-out 0.75s;
+    animation-fill-mode: backwards;
+}
+
+.three {
+    animation: fadeIn 1.25s ease-in-out 1s;
+    animation-fill-mode: backwards;
+}
+
+.four {
+    animation: fadeIn 1.25s ease-in-out 1.25s;
+    animation-fill-mode: backwards;
+}
+
+.five {
+    animation: fadeIn 1.25s ease-in-out 1.5s;
+    animation-fill-mode: backwards;
 }
 
 /* FORM */
