@@ -345,6 +345,11 @@ aside {
     animation-fill-mode: backwards;
 }
 
+.seven {
+    animation: fadeIn 1.25s ease-in-out 2s;
+    animation-fill-mode: backwards;
+}
+
 /* FORM */
 
 form {
